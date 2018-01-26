@@ -1,4 +1,8 @@
 
+$('.A1Content').hide();
+$('.A2Content').hide();
+$('.A3Content').hide();
+
 function main(){
 
   $('.A1').on('click',function(){
@@ -14,9 +18,5 @@ function main(){
     $('.A3Heading').toggleClass('Active');
   })
 }
-
-$('.A1Content').hide();
-$('.A2Content').hide();
-$('.A3Content').hide();
 
 $(document).ready(main); //runs the main function when the document has loaded
