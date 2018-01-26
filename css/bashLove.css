@@ -52,6 +52,7 @@ li{
   color: brown;
   font-family: 'Dosis', sans-serif;
   transition: ease all .1s;
+  box-shadow: -2px 5px 0px black;
 }
 .A1:hover, .A2:hover, .A3:hover{
   transform: scale(1.03);
