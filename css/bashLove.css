@@ -1,6 +1,6 @@
 
 /*CSS RESET*/
-html, body, div, container, ul, li, a,{
+html, body, div, ul, li, a,{
   margin: 0px;
   padding: 0px;
   font-size: 15px;
@@ -9,60 +9,27 @@ html, body, div, container, ul, li, a,{
   min-width: 0px;
   letter-spacing: 1px;
 }
+h1{
+  text-align: center;
+  font-size: 60px;
+}
 .body{
   margin: 0px;
 }
+
 .wrapper{
-  position:absolute;
-  text-align: center;
-  top: calc(50% - 400px);
-  left: calc(50% - 350px);
-}
-.body1{
-  position: absolute;
-  left: calc(50% - 68px);
-  bottom: calc(50% - 200px);
-  max-width: 210px;
-  height: 256px;
-  background-color: slategrey;
-  text align: center;
-  padding: 12px;
-  font-size: 14px;
-  border-radius: 0px 65px;
-}
-.body2{
-  position: absolute;
-  left: calc(50% - 68px);
-  bottom: calc(50% - 100px);
-  max-width: 210px;
-  height: 256px;
-  background-color: darkslategrey;
-  text align: center;
-  padding: 12px;
-  font-size: 14px;
-  border-radius: 0px 65px;
+  display: flex;
+  flex-direction: column;
+  margin: 15%;
 }
 
-.intro{
-  position: relative;
-  text-align: left;
-  color: black;
-  top: 40px;
+.A1, .A2, .A3, .A4{
+  border: solid teal 1px;
+  text-align: center;
+  margin: 2%;
+  padding: 10px;
+  cursor: pointer;
 }
-.bigF{
-  position: relative;
-  margin: auto;
-  height: 700px;
-  width: 700px;
-  z-index: 5;
-}
-.Fack{
-  position: absolute;
-  font-size: 25px;
-  left: calc(50% - 120px);
-  bottom: calc(50% - 325px);
-  opacity: 0;
-}
-.Fack .go{
-  opacity: 1;
+.expand{
+  height: 100px;
 }

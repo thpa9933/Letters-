@@ -1,3 +1,4 @@
-function fackyou(){
-  $("Fack").toggle('go');
+function expand(){
+  console.log("it works");
+  $("expand").toggle().show();
 }
