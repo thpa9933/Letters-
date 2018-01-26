@@ -1,10 +1,6 @@
 
 function main(){
-  // $('.wrapper').hide();
-  // $('.wrapper').fadeIn(1000);
-  $('.A1Content').hide();
-  $('.A2Content').hide();
-  $('.A3Content').hide();
+
   $('.A1').on('click',function(){
     $('.A1Content').slideToggle(300);
     $('.A1Heading').toggleClass('Active'); //The Active class simply overwrites the the other attributes
@@ -18,5 +14,9 @@ function main(){
     $('.A3Heading').toggleClass('Active');
   })
 }
+
+$('.A1Content').hide();
+$('.A2Content').hide();
+$('.A3Content').hide();
 
 $(document).ready(main); //runs the main function when the document has loaded

@@ -13,14 +13,14 @@ h1{
   font-family: 'Bungee Shade', cursive;
   text-align: center;
   font-size: 100px;
-  margin-bottom:20px;
+  margin-bottom: 12px;
 }
 .type{
   overflow: hidden;
   margin: 0 auto;
   letter-spacing: .20em;
   animation:
-    type 3.5s steps(10, end)
+    type 2.5s steps(10, end)
 }
 @keyframes type{
   from{width:0}
@@ -90,11 +90,14 @@ li{
   margin: 0px auto;
 }
 .LinkHome, .LinkGit, .LinkGitHub{
-  padding: 20px;
-  margin: 0px;
+  padding: 10px;
+  padding-bottom: 8px;
+  margin: 10px;
   transition: all ease .1s;
   cursor: pointer;
 }
 .LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
   transform: scale(1.15);
+  background-color: brown;
+  border-radius: 10px;
 }
