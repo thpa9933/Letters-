@@ -83,6 +83,7 @@ li{
 .Active{
   background-color: brown;
   color:white;
+  border-radius: 3px;
 }
 
 .Links{
