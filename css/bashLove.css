@@ -12,12 +12,25 @@ html, body, div, ul, li, a,{
 h1{
   font-family: 'Bungee Shade', cursive;
   text-align: center;
-  font-size: 80px;
-  margin-bottom:10px;
+  font-size: 100px;
+  margin-bottom:20px;
 }
+.type{
+  overflow: hidden;
+  margin: 0 auto;
+  letter-spacing: .20em;
+  animation:
+    type 3.5s steps(10, end)
+}
+@keyframes type{
+  from{width:0}
+  to{width:100%}
+}
+
 li{
   padding:5px;
 }
+
 .body{
   margin: 0px;
 }
@@ -65,7 +78,6 @@ li{
   font-weight: bold;
   text-align: center;
 }
-
 
 .Active{
   background-color: brown;
