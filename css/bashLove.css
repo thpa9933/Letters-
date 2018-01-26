@@ -13,6 +13,10 @@ h1{
   font-family: 'Bungee Shade', cursive;
   text-align: center;
   font-size: 80px;
+  margin-bottom:10px;
+}
+li{
+  padding:5px;
 }
 .body{
   margin: 0px;
@@ -22,35 +26,63 @@ h1{
   display: flex;
   flex-direction: column;
   margin: 15%;
-  margin-top: 5%;
+  margin-top: 3%;
 }
 
-.A1, .A2, .A3, .A4{
-  border: solid tan 1px;
+.A1, .A2, .A3{
+  border: solid black 1px;
+  border-radius: 3px;
   text-align: center;
   margin: 2%;
   padding: 10px;
   cursor: pointer;
   color: brown;
   font-family: 'Dosis', sans-serif;
+  transition: ease all .1s;
+}
+.A1:hover, .A2:hover, .A3:hover{
+  transform: scale(1.03);
 }
 
-.A1Content{
+.A1Content, .A2Content, .A3Content{
   list-style: none;
   padding: 0;
   font-size: 18px;
   font-weight: 50;
-  text-align: left;
-  padding-left:20%;
-
+  text-align: center;
 }
 .A1Heading{
-  font-size: 30px;
+  padding: 5px;
+  padding-bottom: 7px;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+}
+.A2Heading, .A3Heading{
+  padding: 5px;
+  padding-bottom: 7px;
+  font-size: 23px;
   font-weight: bold;
   text-align: center;
 }
 
+
 .Active{
   background-color: brown;
   color:white;
+}
+
+.Links{
+  display:flex;
+  flex-direction: row;
+  margin: 0px auto;
+}
+.LinkHome, .LinkGit, .LinkGitHub{
+  padding: 20px;
+  margin: 0px;
+  transition: all ease .1s;
+  cursor: pointer;
+}
+.LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
+  transform: scale(1.15);
 }
