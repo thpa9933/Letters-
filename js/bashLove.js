@@ -4,7 +4,8 @@ function main(){
   $('.wrapper').fadeIn(1000);
   $('.A1Content').hide();
   $('.A1').on('click',function(){
-    $('.A1Content').slideToggle(500);
+    $('.A1Content').slideToggle(300);
+    $('.A1Heading').toggleClass('Active'); //The Active class simply overwrites the the other attributes
   })
 }
 
