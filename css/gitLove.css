@@ -1,0 +1,30 @@
+/*CSS RESET*/
+html, body, div, ul, li, a,{
+  margin: 0px;
+  padding: 0px;
+  font-size: 15px;
+  font: inherit;
+  vertical-align: baseline;
+  min-width: 0px;
+  letter-spacing: 1px;
+}
+
+.bodyP{
+  postion: absolute;
+  margin: 0 auto;
+  font-size: 16px;
+}
+
+.leftHeart{
+  position: absolute;
+  left: calc(50% - 302px);
+  top: calc(50% - 220px);
+
+}
+
+.rightHeart{
+  position: absolute;
+  left: calc(50% - 55px);
+  top: calc(50% - 252px);
+
+}
