@@ -8,7 +8,12 @@ html, body, div, ul, li, a,{
   min-width: 0px;
   letter-spacing: 1px;
 }
-
+.title{
+  position: absolute;
+  left: calc(50% - 100px);
+  top: 10%;
+  font-size: 40px;
+}
 .bodyP{
   postion: absolute;
   margin: 0 auto;
@@ -19,12 +24,26 @@ html, body, div, ul, li, a,{
   position: absolute;
   left: calc(50% - 302px);
   top: calc(50% - 220px);
+  transition: all ease-out 1s;
+}
 
+.leftMove{
+  transform: scale(.1) rotate(-270deg);
+  left: calc(50% - 302px);
+  top: calc(50% - 0px);
+  opacity: 0;
 }
 
 .rightHeart{
   position: absolute;
   left: calc(50% - 55px);
   top: calc(50% - 252px);
+  transition: all ease-out 1s;
+}
 
+.rightMove{
+  transform: scale(.1) rotate(270deg);
+  left: calc(50% - 55px);
+  top: calc(50% - 0px);
+  opacity: 0;
 }
