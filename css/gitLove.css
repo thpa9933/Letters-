@@ -8,16 +8,32 @@ html, body, div, ul, li, a,{
   min-width: 0px;
   letter-spacing: 1px;
 }
+ul{
+  list-style-type: none;
+}
 .title{
+  font-family: 'Amatic SC', cursive;
   position: absolute;
-  left: calc(50% - 100px);
+  left: calc(50% - 110px);
   top: 10%;
-  font-size: 40px;
+  font-size: 85px;
+  font-weight: 350;
 }
 .bodyP{
-  postion: absolute;
+  font-family: 'Amatic SC';
+  position: absolute;
   margin: 0 auto;
-  font-size: 16px;
+  font-size: 23px;
+  text-align: center;
+  left: calc(50% - 190px);
+  top: calc(50% - 161px);
+  color: darkred;
+  opacity: 0;
+  transition: ease-in all 1.8s;
+  font-weight: bold;
+}
+.bodyPActive{
+  opacity: 1;
 }
 
 .leftHeart{
@@ -46,4 +62,50 @@ html, body, div, ul, li, a,{
   left: calc(50% - 55px);
   top: calc(50% - 0px);
   opacity: 0;
+}
+.leftDagger{
+  position:absolute;
+  opacity: 1;
+  left: calc(50% - 1000px);
+  top: calc(50% - 500px);
+  transition: ease all .5s;
+  opacity: 0;
+}
+.leftDaggerActive{
+  opacity: 1;
+  left: calc(50% - 469px);
+  top: calc(50% - 302px);
+}
+.rightDagger{
+  position:absolute;
+  opacity: 1;
+  left: calc(50% - 1000px);
+  top: calc(50% - 500px);
+  transition: ease all 1s;
+  opacity: 0;
+}
+.rightDaggerActive{
+  opacity: 1;
+  left: calc(50% + 142px);
+  top: calc(50% + 26px);
+}
+
+.Links{
+  display:flex;
+  flex-direction: row;
+  position: absolute;
+  left: calc(50% - 120px);
+  top: calc(50% + 300px);
+}
+.LinkHome, .LinkGit, .LinkGitHub{
+  padding: 10px;
+  padding-bottom: 8px;
+  margin: 10px;
+  transition: all ease .1s;
+  cursor: pointer;
+}
+.LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
+  transform: scale(1.15);
+  background-color: brown;
+  border-radius: 10px;
 }
