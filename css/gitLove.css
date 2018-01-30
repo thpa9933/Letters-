@@ -29,7 +29,7 @@ ul{
   top: calc(50% - 161px);
   color: darkred;
   opacity: 0;
-  transition: ease-in all 1.8s;
+  transition: ease-in all 1s;
   font-weight: bold;
 }
 .bodyPActive{
@@ -44,10 +44,10 @@ ul{
 }
 
 .leftMove{
-  transform: scale(.1) rotate(-270deg);
-  left: calc(50% - 302px);
-  top: calc(50% - 0px);
-  opacity: 0;
+  transform: scale(.1) rotate(-200deg);
+  left: calc(50% - 319px);
+  top: calc(50% + 94px);
+  /*opacity: 0;*/
 }
 
 .rightHeart{
@@ -58,10 +58,10 @@ ul{
 }
 
 .rightMove{
-  transform: scale(.1) rotate(270deg);
-  left: calc(50% - 55px);
-  top: calc(50% - 0px);
-  opacity: 0;
+  transform: scale(.1) rotate(222deg);
+  left: calc(50% - 8px);
+  top: calc(50% + 78px);
+  /*opacity: 0;*/
 }
 .leftDagger{
   position:absolute;
