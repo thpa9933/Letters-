@@ -38,7 +38,7 @@ ul{
 
 .leftHeart{
   position: absolute;
-  left: calc(50% - 302px);
+  left: calc(50% - 281px);
   top: calc(50% - 220px);
   transition: all ease-out 1s;
 }
@@ -52,7 +52,7 @@ ul{
 
 .rightHeart{
   position: absolute;
-  left: calc(50% - 55px);
+  left: calc(50% - 34px);
   top: calc(50% - 252px);
   transition: all ease-out 1s;
 }
