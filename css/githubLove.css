@@ -127,10 +127,10 @@ body{
 font-family: 'Poiret One', cursive;
 position: absolute;
 color: grey;
-width: 250px;
-height: 250px;
-top: calc(50% - 150px);
-left: calc(50% - 125px);
+width: 150px;
+height: 150px;
+top: calc(50% - 60px);
+left: calc(50% - 75px);
 text-align: center;
 opacity: 0;
 transition: ease all 1s;
@@ -151,19 +151,23 @@ font-size: 18px;
 
 
 .Links{
+  position: absolute;
+  left: calc(50% + 154px);
+  top: calc(50% + 300px);
   display:flex;
   flex-direction: row;
   margin: 0px auto;
+  opacity: .6;
 }
 .LinkHome, .LinkGit, .LinkGitHub{
-  padding: 10px;
-  padding-bottom: 8px;
+  padding: 5px;
+  padding-bottom: 0px;
   margin: 10px;
   transition: all ease .1s;
   cursor: pointer;
 }
 .LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
   transform: scale(1.15);
-  background-color: brown;
+  background-color: slategrey;
   border-radius: 10px;
 }
