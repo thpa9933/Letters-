@@ -13,6 +13,9 @@ body{
   background-color: black;
 }
 
+
+
+
 .borderbox{
   border: solid 1px slategrey;
   position: absolute;
@@ -121,6 +124,7 @@ body{
 }
 
 .content1, .content2, .content3, .content4{
+font-family: 'Poiret One', cursive;
 position: absolute;
 color: grey;
 width: 250px;
@@ -128,7 +132,38 @@ height: 250px;
 top: calc(50% - 150px);
 left: calc(50% - 125px);
 text-align: center;
-padding: auto;
 opacity: 0;
 transition: ease all 1s;
+font-size: 18px;
+}
+
+.content5{
+  position: absolute;
+  color: grey;
+  top: calc(50% - 94px);
+  left: calc(50% - 109px);
+  text-align: center;
+  opacity: 1;
+  transition: ease all 1s;
+  font-size: 80px;
+  font-family: 'Bad Script', cursive;
+}
+
+
+.Links{
+  display:flex;
+  flex-direction: row;
+  margin: 0px auto;
+}
+.LinkHome, .LinkGit, .LinkGitHub{
+  padding: 10px;
+  padding-bottom: 8px;
+  margin: 10px;
+  transition: all ease .1s;
+  cursor: pointer;
+}
+.LinkHome:hover, .LinkGit:hover, .LinkGitHub:hover{
+  transform: scale(1.15);
+  background-color: brown;
+  border-radius: 10px;
 }

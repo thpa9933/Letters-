@@ -19,6 +19,7 @@ function change(x){
       if(current == 1){
         current = 0;
         $('.content1').css("opacity","0");
+        $('.content5').css("opacity","1");
       }
       else{
         current = 1;
@@ -26,6 +27,7 @@ function change(x){
         $('.content2').css("opacity","0");
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","0");
+        $('.content5').css("opacity","0");
       }
       break;
 
@@ -33,6 +35,7 @@ function change(x){
       if(current == 2){
         current = 0;
         $('.content2').css("opacity","0");
+        $('.content5').css("opacity","1");
       }
       else{
         current = 2;
@@ -40,6 +43,7 @@ function change(x){
         $('.content2').css("opacity","1");
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","0");
+        $('.content5').css("opacity","0");
       }
       break;
 
@@ -47,6 +51,7 @@ function change(x){
       if(current == 3){
         current = 0;
         $('.content3').css("opacity","0");
+        $('.content5').css("opacity","1");
       }
       else{
         current = 3;
@@ -54,6 +59,7 @@ function change(x){
         $('.content2').css("opacity","0");
         $('.content3').css("opacity","1");
         $('.content4').css("opacity","0");
+        $('.content5').css("opacity","0");
       }
       break;
 
@@ -61,6 +67,7 @@ function change(x){
       if(current == 4){
         current = 0;
         $('.content4').css("opacity","0");
+        $('.content5').css("opacity","1");
       }
       else{
         current = 4;
@@ -68,6 +75,7 @@ function change(x){
         $('.content2').css("opacity","0");
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","1");
+        $('.content5').css("opacity","0");
       }
       break;
   }
