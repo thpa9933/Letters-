@@ -34,16 +34,6 @@ body{
   top: calc(50% - 272px);
 }
 
-.insidecircle1{
-  position: absolute;
-  background-color: slategrey;
-  border-radius: 50%;
-  width: 500px;
-  height: 500px;
-  left: calc(50% - 250px);
-  top: calc(50% - 272px);
-}
-
 .insidebox{
   position: absolute;
   border: solid 1px slategrey;
@@ -128,4 +118,17 @@ body{
 }
 .active{
   opacity: 1;
+}
+
+.content1, .content2, .content3, .content4{
+position: absolute;
+color: grey;
+width: 250px;
+height: 250px;
+top: calc(50% - 150px);
+left: calc(50% - 125px);
+text-align: center;
+padding: auto;
+opacity: 0;
+transition: ease all 1s;
 }
