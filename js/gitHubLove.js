@@ -74,9 +74,9 @@ function change(x){
 }
 
 
-  if(x == 1){
-    $('.content1').css("opacity","1");
-  }
-}
+//   if(x == 1){
+//     $('.content1').css("opacity","1");
+// }
+
 
 //$(document).ready(main); //runs the main function when the document has loaded
