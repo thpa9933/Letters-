@@ -52,6 +52,7 @@ function change(x){
         current = 0;
         $('.content1').css("opacity","0");
         $('.content5').css("opacity","1");
+        $('.circle1').css("background-color","black");
       }
       else{
         current = 1;
@@ -60,6 +61,10 @@ function change(x){
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","0");
         $('.content5').css("opacity","0");
+        $('.circle1').css("background-color","slategrey");
+        $('.circle2').css("background-color","black");
+        $('.circle3').css("background-color","black");
+        $('.circle4').css("background-color","black");
       }
       break;
 
@@ -68,6 +73,7 @@ function change(x){
         current = 0;
         $('.content2').css("opacity","0");
         $('.content5').css("opacity","1");
+        $('.circle2').css("background-color","black");
       }
       else{
         current = 2;
@@ -76,6 +82,10 @@ function change(x){
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","0");
         $('.content5').css("opacity","0");
+        $('.circle2').css("background-color","slategrey");
+        $('.circle1').css("background-color","black");
+        $('.circle3').css("background-color","black");
+        $('.circle4').css("background-color","black");
       }
       break;
 
@@ -84,6 +94,7 @@ function change(x){
         current = 0;
         $('.content3').css("opacity","0");
         $('.content5').css("opacity","1");
+        $('.circle3').css("background-color","black");
       }
       else{
         current = 3;
@@ -92,6 +103,10 @@ function change(x){
         $('.content3').css("opacity","1");
         $('.content4').css("opacity","0");
         $('.content5').css("opacity","0");
+        $('.circle3').css("background-color","slategrey");
+        $('.circle1').css("background-color","black");
+        $('.circle2').css("background-color","black");
+        $('.circle4').css("background-color","black");
       }
       break;
 
@@ -100,6 +115,7 @@ function change(x){
         current = 0;
         $('.content4').css("opacity","0");
         $('.content5').css("opacity","1");
+        $('.circle4').css("background-color","black");
       }
       else{
         current = 4;
@@ -108,6 +124,10 @@ function change(x){
         $('.content3').css("opacity","0");
         $('.content4').css("opacity","1");
         $('.content5').css("opacity","0");
+        $('.circle4').css("background-color","slategrey");
+        $('.circle1').css("background-color","black");
+        $('.circle2').css("background-color","black");
+        $('.circle3').css("background-color","black");
       }
       break;
   }
