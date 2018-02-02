@@ -192,7 +192,7 @@ font-size: 18px;
     text-shadow: none;
   }
   50%{
-    text-shadow: 3px 2px 2px lightgrey;
+    text-shadow: 3px 2px 2px darkgoldenrod;
   }
   100%{
     text-shadow: none;
@@ -200,13 +200,22 @@ font-size: 18px;
 }
 .content5:hover{
     color: mediumaquamarine;
-    text-shadow: 2px 2px 0px white;
+    text-shadow: 2px 2px 0px slategrey;
 }
 .go{
   opacity: 1;
   cursor: pointer;
 }
 
+/*.arrow{
+  position: relative;
+  display:flex;
+  flex-direction: row;
+  margin: 0px auto;
+  opacity: 1;
+  transition: ease all 1.5s;
+  opacity: .6;
+}*/
 .Links{
   position: static;
   /*left: calc(50% + 154px);
