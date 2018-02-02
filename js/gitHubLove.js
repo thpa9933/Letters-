@@ -1,16 +1,32 @@
 
-
-// function main(){
-// $('.circle1').toggleClass('active');
-// }
 $('.insidecircle1Active').hide();
 
 setTimeout(function(){
-$('.circle1').toggleClass('active');
-$('.circle2').toggleClass('active');
 $('.circle3').toggleClass('active');
-$('.circle4').toggleClass('active');
 }, 3600);
+
+setTimeout(function(){
+$('.circle2').toggleClass('active');
+}, 3900);
+
+setTimeout(function(){
+$('.circle4').toggleClass('active');
+}, 4200);
+
+setTimeout(function(){
+$('.circle1').toggleClass('active');
+}, 4500);
+
+setTimeout(function(){
+  console.log('it words');
+$('.content5').toggleClass('go');
+}, 700);
+
+setTimeout(function(){
+$('.Links').toggleClass('LinksGo');
+}, 5000);
+
+
 
 var current = 0;
 function change(x){
@@ -80,11 +96,3 @@ function change(x){
       break;
   }
 }
-
-
-//   if(x == 1){
-//     $('.content1').css("opacity","1");
-// }
-
-
-//$(document).ready(main); //runs the main function when the document has loaded

@@ -13,9 +13,6 @@ body{
   background-color: black;
 }
 
-
-
-
 .borderbox{
   border: solid 1px slategrey;
   position: absolute;
@@ -23,7 +20,7 @@ body{
   left: 15%;
   top: 12%;
   width:70vw;
-  height:70vh;
+  height:71vh;
   text-align: center;
 }
 
@@ -49,12 +46,32 @@ body{
   animation-duration: 3.5s;
   animation-direction: alternate;
 }
+.insidebox2{
+  position: absolute;
+  border: solid 1px slategrey;
+  width: 510px;
+  height: 510px;
+  left: calc(50% - 255px);
+  top: calc(50% - 277px);
+  transform: rotate(45deg);
+  animation-name: main2;
+  animation-duration: 3.5s;
+  animation-direction: alternate;
+}
 @keyframes main {
   0% {
     transform: rotate(45deg);
   }
   100% {
     transform: rotate(405deg);
+  }
+}
+@keyframes main2 {
+  0% {
+    transform: rotate(45deg);
+  }
+  100% {
+    transform: rotate(-405deg);
   }
 }
 
@@ -66,7 +83,7 @@ body{
   height: 20px;
   left: calc(50% - 330px);
   top: calc(50% - 33px);
-  transition: ease all .3s;
+  transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
 }
@@ -82,7 +99,7 @@ body{
   height: 20px;
   left: calc(50% + 311px);
   top: calc(50% - 33px);
-  transition: ease all .3s;
+  transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
 }
@@ -97,7 +114,7 @@ body{
   height: 20px;
   left: calc(50% - 10px);
   top: calc(50% - 345px);
-  transition: ease all .3s;
+  transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
 }
@@ -112,7 +129,7 @@ body{
   height: 20px;
   left: calc(50% - 10px);
   top: calc(50% + 266px);
-  transition: ease all .3s;
+  transition: ease all .2s;
   cursor: pointer;
   opacity: 0;
 }
@@ -120,8 +137,23 @@ body{
   background-color: lightslategrey;
 }
 .active{
-  opacity: 1;
+  opacity: .6;
+  animation-name: pulse;
+  animation-duration: 1.2s;
+  animation-iteration-count: infinite;
 }
+
+ @keyframes pulse{
+   0%{
+    transform: scale(1.0);
+   }
+   50%{
+     transform: scale(1.1);
+   }
+   100%{
+    transform: scale(1.0);
+   }
+ }
 
 .content1, .content2, .content3, .content4{
 font-family: 'Poiret One', cursive;
@@ -143,21 +175,39 @@ font-size: 18px;
   top: calc(50% - 94px);
   left: calc(50% - 109px);
   text-align: center;
-  opacity: 1;
+  opacity: 0;
   transition: ease all 1s;
   font-size: 80px;
   font-family: 'Bad Script', cursive;
+  animation-name: glow;
+  animation-iteration-count: 1;
+  animation-duration: 2.5s;
+  animation-delay: 2.5s;
+}
+@keyframes glow{
+  0%{
+    text-shadow: none;
+  }
+  50%{
+    text-shadow: 3px 2px 2px lightgrey;
+  }
+  100%{
+    text-shadow: none;
+  }
 }
 
+.go{
+  opacity: 1;}
 
 .Links{
-  position: absolute;
-  left: calc(50% + 154px);
-  top: calc(50% + 300px);
+  position: static;
+  /*left: calc(50% + 154px);
+  top: calc(50% + 310px);*/
   display:flex;
   flex-direction: row;
   margin: 0px auto;
-  opacity: .6;
+  opacity: 0;
+  transition: ease all 1.5s;
 }
 .LinkHome, .LinkGit, .LinkGitHub{
   padding: 5px;
@@ -170,4 +220,7 @@ font-size: 18px;
   transform: scale(1.15);
   background-color: slategrey;
   border-radius: 10px;
+}
+.LinksGo{
+  opacity: .6;
 }
