@@ -14,12 +14,17 @@ h1{
   font-size: 95px;
   margin-bottom: 12px;
 }
+
 .type{
   overflow: hidden;
   margin: 0 auto;
   letter-spacing: .20em;
-  animation:
-    type 2s steps(7, end)
+  animation: type 1.5s steps(4, end);
+}
+.typeContainer{
+  position:relative;
+  width: 320px;
+  left: calc(50% - 160px);
 }
 @keyframes type{
   from{width:0}
