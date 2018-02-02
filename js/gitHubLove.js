@@ -26,7 +26,23 @@ setTimeout(function(){
 $('.Links').toggleClass('LinksGo');
 }, 5000);
 
-
+var i = 0;
+function activate(){
+  i++;
+  console.log(i);
+  if((i % 2) == 0){
+    $('.insidebox').css('transition','3s');
+    $('.insidebox2').css('transition','3s');
+    $('.insidebox').css('transform','rotate(405deg)');
+    $('.insidebox2').css('transform','rotate(-405deg)');
+  }
+  else{
+    $('.insidebox').css('transition','3s');
+    $('.insidebox2').css('transition','3s');
+    $('.insidebox').css('transform','rotate(-405deg)');
+    $('.insidebox2').css('transform','rotate(405deg)');
+  }
+}
 
 var current = 0;
 function change(x){
