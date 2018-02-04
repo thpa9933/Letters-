@@ -171,3 +171,10 @@ function change(x){
       break;
   }
 }
+
+function spin(){
+  $('.insidecircle2').css("animation-name", "spin");
+  setTimeout(function(){
+    $('.insidecircle2').css("animation-name", "none");
+  }, 2000);
+}

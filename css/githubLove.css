@@ -308,3 +308,126 @@ font-size: 18px;
 .LinksGo{
   opacity: .6;
 }
+
+
+@media only screen and (max-height: 790px){
+
+.borderbox{
+  left: 20%;
+  top: 17%;
+  width: 60%;
+  height: 66%;
+}
+.insidecircle{
+  width: 350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+
+}
+.insidebox{
+  width:350px;
+  height: 350px;
+  top: calc(50% - 175px);
+  left: calc(50% - 175px);
+}
+.insidebox2{
+  width: 360px;
+  height: 360px;
+  top: calc(50% - 180px);
+  left: calc(50% - 180px);
+}
+.circle1{
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  left: calc(50% - 227px);
+}
+.circle2{
+  width: 16px;
+  height: 16px;
+  top: calc(50% - 8px);
+  left: calc(50% + 212px);
+}
+.circle3{
+  width: 16px;
+  height: 16px;
+  left: calc(50% - 8px);
+  top: calc(50% - 227px);
+}
+.circle4{
+  width: 16px;
+  height: 16px;
+  left: calc(50% - 8px);
+  top: calc(50% + 212px);
+}
+.goldDot1{
+  left: calc(50% - 222px);
+  top: calc(50% - 3px);
+
+}
+.goldDot2{
+  left: calc(50% + 217px);
+  top: calc(50% - 3px);
+}
+.goldDot3{
+  top: calc(50% - 222px);
+  left: calc(50% - 3px);
+}
+
+.goldDot4{
+  left: calc(50%  - 3px);
+  top: calc(50% + 217px);
+}
+.content5{
+  font-size: 60px;
+  top: calc(50% - 49px);
+  left: calc(50% - 85px);
+}
+.content1, .content2, .content3,.content4{
+  font-size: 20px;
+  top: calc(50% - 30px);
+}
+
+.insidecircle2{
+  position: absolute;
+
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+
+  border-radius: 50%;
+  box-shadow: none;
+  width: 320px;
+  height: 320px;
+  left: calc(50% - 160px);
+  top: calc(50% - 160px);
+  z-index: 8;
+  transition: ease all 1s;
+  transform: rotate(45deg);
+  animation-duration: 2s;
+  animation-iteration-count: 1;
+}
+
+@keyframes spin{
+  0%{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+  }
+  50%{
+    border-top: 1px solid slategrey;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid slategrey;
+    transform:rotate(360deg);
+  }
+  100%{
+    border-top: 1px solid black;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    transform:rotate(-360deg);
+  }
